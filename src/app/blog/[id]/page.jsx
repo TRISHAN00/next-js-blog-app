@@ -21,7 +21,7 @@ export default function Blog({params}) {
     getData(params)
       .then(data => setData(data))
       .catch(error => setError(error));
-  }, []);
+  }, [params]);
   if (error) {
     return <div>Error: {error.message}</div>;
   }

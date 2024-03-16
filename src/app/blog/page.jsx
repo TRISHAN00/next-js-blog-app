@@ -26,5 +26,5 @@ export default function Blog() {
     return <div>Error: {error.message}</div>;
   }
 
-  return <main>{data.slice(0, 10).map(post => <Link href={`/blog/${post.id}`} >{post.title}</Link>)}</main>;
+  return <main>{data.slice(0, 10).map(post => <Link key={post.id} href={`/blog/${post.id}`} >{post.title}</Link>)}</main>;
 }
