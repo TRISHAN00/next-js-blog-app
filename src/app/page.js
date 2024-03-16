@@ -1,6 +1,13 @@
+export const metadata = {
+  openGraph: {
+    title: 'Home',
+  },
+}
 
 export default function Home() {
   return (
-    <p>This is Home page.</p>
+    <div>
+      <p>This is Home page.</p>
+    </div>
   );
 }

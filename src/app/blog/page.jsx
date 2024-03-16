@@ -13,6 +13,7 @@ async function getData() {
   return res.json();
 }
 
+
 export default function Blog() {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);

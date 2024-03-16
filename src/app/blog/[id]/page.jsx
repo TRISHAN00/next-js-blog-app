@@ -1,8 +1,10 @@
 "use client"
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
-async function getData(params) {
+ 
+
+
+async function getData({ params }) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/todos/${params.id}`);
   
   if (!res.ok) {
